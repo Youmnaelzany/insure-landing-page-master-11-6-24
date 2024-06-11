@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Youmnaelzany/insure-landing-page-master-11-6-24.git)
+- Live Site URL: [Add live site URL here](https://insurelandingpage11624.netlify.app/)
 
 ### Built with
 
