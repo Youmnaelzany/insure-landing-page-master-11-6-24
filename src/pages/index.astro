@@ -1,0 +1,172 @@
+---
+import Header from '@/components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+import '@/styles/globals.css';
+import Footer from '@/components/Footer.astro';
+---
+
+<Layout title='Insure landing page.'>
+  <Header />
+  <main class='overflow-hidden'>
+    <!-- Humanizing your insurance. -->
+    <section
+      class='relative z-10 flex flex-col bg-[#2D2641] md:h-[37.5rem] md:flex-row-reverse md:items-center md:justify-between'
+    >
+      <picture>
+        <source
+          media='(min-width:768px )'
+          srcset='/images/bg-pattern-intro-left-desktop.svg'
+        />
+        <img
+          src='/images/bg-pattern-intro-left-mobile.svg'
+          alt=''
+          class='absolute bottom-[330px] left-0 md:bottom-[-309px]'
+        />
+      </picture>
+      <picture>
+        <source
+          media='(min-width: 768px)'
+          srcset='/images/image-intro-desktop.jpg'
+        />
+        <img
+          src='/images/image-intro-mobile.jpg'
+          alt=''
+          class='md:pr-[10.31rem] md:pt-[16.81rem]'
+        />
+      </picture>
+      <div
+        class='flex flex-col items-center justify-center gap-8 px-6 py-[5.81rem] text-center md:items-start md:justify-start md:pl-[10.31rem] md:text-left'
+      >
+        <div class='flex flex-col gap-4'>
+          <h1
+            class='w-[20.4375rem] font-DM text-5xl font-normal leading-[3rem] tracking-[-0.04169rem] text-white md:relative md:w-[33.75rem] md:text-[4.5rem] md:leading-[4rem] md:tracking-[-0.0625rem] md:before:absolute md:before:-top-[3.94rem] md:before:left-0 md:before:h-[0.0625rem] md:before:w-[9.375rem] md:before:bg-white'
+            '
+          >
+            Humanizing your insurance.
+          </h1>
+          <p
+            class='w-[20.4375rem] font-Karla text-base font-normal leading-relaxed text-white md:w-[33.75rem]'
+          >
+            Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that&#39;s right
+            for you. Ensure you and your loved ones are protected.
+          </p>
+        </div>
+        <div
+          class='flex h-10 w-[9.125rem] items-center justify-center border-[1.5px] border-solid border-white text-white transition-all duration-300 ease-in hover:bg-white hover:text-[#2C2830]'
+        >
+          <a
+            href='/'
+            class='font-Karla text-sm font-bold uppercase leading-normal tracking-[0.09375rem]'
+            >View plans</a
+          >
+        </div>
+      </div>
+      <picture>
+        <source
+          media='(min-width: 768px)'
+          srcset='/images/bg-pattern-intro-right-desktop.svg'
+        />
+        <img
+          src='/images/bg-pattern-intro-right-mobile.svg'
+          alt=''
+          class='absolute right-0 top-[801px] md:right-[5px] md:top-[-86px]'
+        />
+      </picture>
+    </section>
+    <!-- We're different -->
+    <section
+      class='mx-6 mb-[8.75rem] mt-[11.31rem] flex flex-col items-center justify-center gap-20 md:mx-[10.31rem] md:mb-[9.87rem] md:mt-[33.06rem] md:items-start md:justify-start md:gap-24'
+    >
+      <h2
+        class='relative font-DM text-5xl font-normal leading-[3rem] tracking-[-0.04169rem] text-[#2C2830] before:absolute before:-top-10 before:left-[75px] before:h-[0.0625rem] before:w-[9.375rem] before:bg-[#C396C6] md:text-7xl md:leading-[4rem] md:tracking-[-0.0625rem] md:before:left-0 md:before:top-[-3.94rem]'
+      >
+        We&#39;re different
+      </h2>
+
+      <div
+        class='flex flex-col items-center justify-center gap-14 text-center md:flex-row md:justify-between md:gap-[1.88rem] md:text-left'
+      >
+        <!-- Snappy Process< -->
+        <div class='flex flex-col items-center gap-8 md:items-start'>
+          <img src='/images/icon-snappy-process.svg' alt='' class='' />
+          <div class='flex flex-col gap-4'>
+            <h3
+              class='font-DM text-[1.75rem] font-normal leading-normal tracking-[-0.02431rem] text-[#2C2830]'
+            >
+              Snappy Process
+            </h3>
+            <p
+              class='font-Karla text-base font-normal leading-relaxed text-[#837D88]'
+            >
+              Our application process can be completed in minutes, not hours.
+              Don&#39;t get stuck filling in tedious forms.
+            </p>
+          </div>
+        </div>
+        <!-- Affordable Prices -->
+        <div class='flex flex-col items-center gap-8 md:items-start'>
+          <img src='/images/icon-affordable-prices.svg' alt='' class='' />
+          <div class='flex flex-col gap-4'>
+            <h3
+              class='font-DM text-[1.75rem] font-normal leading-normal tracking-[-0.02431rem] text-[#2C2830]'
+            >
+              Affordable Prices
+            </h3>
+            <p
+              class='font-Karla text-base font-normal leading-relaxed text-[#837D88]'
+            >
+              We don&#39;t want you worrying about high monthly costs. Our
+              prices may be low, but we still offer the best coverage possible.
+            </p>
+          </div>
+        </div>
+        <!-- People First -->
+        <div class='flex flex-col items-center gap-8 md:items-start'>
+          <img src='/images/icon-people-first.svg' alt='' class='' />
+          <div class='flex flex-col gap-4'>
+            <h3
+              class='font-DM text-[1.75rem] font-normal leading-normal tracking-[-0.02431rem] text-[#2C2830]'
+            >
+              People First
+            </h3>
+            <p
+              class='font-Karla text-base font-normal leading-relaxed text-[#837D88]'
+            >
+              Our plans aren&#39;t full of conditions and clauses to prevent
+              payouts. We make sure you&#39;re covered when you need it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Find out more -->
+    <section
+      class='relative mb-[8.75rem] ml-[1.44rem] mr-[1.56rem] flex flex-col items-center justify-center gap-10 bg-[#2D2641] px-6 py-[4.5rem] text-center md:mx-[10.31rem] md:mb-[9.38rem] md:flex-row md:justify-between md:px-[5.06rem] md:py-[4.31rem] md:text-left'
+    >
+      <h2
+        class='relative z-50 w-[17.4375rem] font-DM text-[2.5rem] font-normal leading-10 tracking-[-0.03475rem] text-white md:w-[30.4375rem] md:text-[3.5rem] md:leading-[3.5rem] md:tracking-[-0.04863rem]'
+      >
+        Find out more about how we work
+      </h2>
+
+      <button
+        type='button'
+        class='relative z-50 h-10 w-40 cursor-pointer border-[1.5px] border-solid border-white font-Karla text-sm font-bold leading-normal tracking-[0.09375rem] text-white transition-all duration-300 ease-in hover:bg-white hover:text-[#2C2830]'
+        >How we work</button
+      >
+      <picture>
+        <source
+          media='(min-width: 768px)'
+          srcset='/images/bg-pattern-how-we-work-desktop.svg'
+        />
+        <img
+          src='/images/bg-pattern-how-we-work-mobile.svg'
+          alt=''
+          class='absolute right-0 top-0'
+        />
+      </picture>
+    </section>
+  </main>
+  <Footer />
+</Layout>

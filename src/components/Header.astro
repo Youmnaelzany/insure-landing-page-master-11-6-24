@@ -1,0 +1,118 @@
+---
+import '@/styles/globals.css';
+---
+
+<header
+  class='relative mx-6 my-[1.94rem] flex items-center justify-between md:mx-[10.31rem]'
+>
+  <div class='flex items-center gap-[11.44rem]'>
+    <a href='/' class='' aria-labelledby='logo'
+      ><img src='/images/logo.svg' alt='logo' /></a
+    >
+    <button type='button' class='cursor-pointer md:hidden' id='OpenMenu'
+      ><img src='/images/icon-hamburger.svg' alt='OpenMenu' class='' /></button
+    >
+    <button type='button' class='hidden cursor-pointer' id='CloseMenu'
+      ><img src='/images/icon-close.svg' alt='CloseMenu' /></button
+    >
+  </div>
+  <!-- Mobile Nav Links  -->
+  <nav
+    class='absolute -left-6 top-16 z-50 hidden h-[36.6875rem] w-[23.4375rem] bg-[#2C2830] px-6 pt-10'
+    id='mobileMenu'
+  >
+    <img
+      src='/images/bg-pattern-mobile-nav.svg'
+      alt=''
+      class='absolute bottom-0 left-0'
+    />
+    <ul class='flex flex-col items-center justify-center gap-6'>
+      <li>
+        <a
+          href='/'
+          class='leading10 cursor-pointer font-Karla text-xl font-bold uppercase tracking-[0.08525rem] text-white'
+        >
+          How we work
+        </a>
+      </li>
+      <li>
+        <a
+          href='/'
+          class='leading10 cursor-pointer font-Karla text-xl font-bold uppercase tracking-[0.08525rem] text-white'
+          >Blog</a
+        >
+      </li>
+      <li>
+        <a
+          href='/'
+          class='leading10 cursor-pointer font-Karla text-xl font-bold uppercase tracking-[0.08525rem] text-white'
+          >Account</a
+        >
+      </li>
+      <li
+        class='flex h-14 w-[20.4375rem] items-center justify-center border-[1.5px] border-solid border-white'
+      >
+        <a
+          href='/'
+          class='cursor-pointer font-Karla text-xl font-bold uppercase leading-10 tracking-[0.08525rem] text-white'
+        >
+          View plans
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Desktop Nav Links -->
+  <nav class='relative hidden md:flex'>
+    <ul class='flex items-center justify-between gap-8'>
+      <li>
+        <a
+          href='/'
+          class='cursor-pointer font-Karla text-sm font-bold uppercase leading-normal tracking-[0.09375rem] text-[#837D88]'
+        >
+          How we work
+        </a>
+      </li>
+      <li>
+        <a
+          href='/'
+          class='cursor-pointer font-Karla text-sm font-bold uppercase leading-normal tracking-[0.09375rem] text-[#837D88]'
+          >Blog</a
+        >
+      </li>
+      <li>
+        <a
+          href='/'
+          class='cursor-pointer font-Karla text-sm font-bold uppercase leading-normal tracking-[0.09375rem] text-[#837D88]'
+          >Account</a
+        >
+      </li>
+      <li
+        class='flex h-10 w-[9.125rem] cursor-pointer items-center justify-center border-[1.5px] border-solid border-[#2C2830] bg-[#2C2830] text-white transition-all duration-300 ease-in hover:bg-transparent hover:text-[#837D88]'
+      >
+        <a
+          href='/'
+          class='font-Karla text-sm font-bold uppercase leading-normal tracking-[0.09375rem]'
+        >
+          View plans
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<script is:inline>
+  const hamburger = document.getElementById('OpenMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const CloseMenu = document.getElementById('CloseMenu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    hamburger.classList.add('hidden');
+    CloseMenu.classList.remove('hidden');
+  });
+  CloseMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    hamburger.classList.remove('hidden');
+    CloseMenu.classList.add('hidden');
+  });
+</script>
